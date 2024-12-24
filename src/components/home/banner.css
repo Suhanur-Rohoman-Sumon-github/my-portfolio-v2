@@ -1,0 +1,152 @@
+.cards {
+  position: relative;
+  padding: 16px;
+  border-radius: 50%;
+}
+
+.cards img {
+  display: block;
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+}
+
+.cards:before,
+.cards:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background: linear-gradient(
+    45deg,
+    #6c22bd,
+    #8b25bb,
+    #a52bb9,
+    #bc34b7,
+    #d040b5,
+    #e645a5,
+    #f55195,
+    #ff6188,
+    #ff796e,
+    #ff965b,
+    #f5b255,
+    #e1cd60
+  );
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  border-radius: 50%;
+  z-index: -1;
+  animation: animat 30s linear infinite;
+  background-size: 400%;
+}
+
+.cards:after {
+  filter: blur(70px);
+}
+
+@keyframes animat {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.video-cards {
+  position: relative;
+  padding: 16px;
+}
+.video-cards:before,
+.video-cards:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background: linear-gradient(
+    45deg,
+    #6c22bd,
+    #8b25bb,
+    #a52bb9,
+    #bc34b7,
+    #d040b5,
+    #e645a5,
+    #f55195,
+    #ff6188,
+    #ff796e,
+    #ff965b,
+    #f5b255,
+    #e1cd60
+  );
+  width: calc(100% + 4px);
+  height: 405px;
+  margin-top: 220px;
+  z-index: -1;
+  animation: animat 30s linear infinite;
+}
+
+.video-cards:after {
+  filter: blur(50px);
+}
+
+@keyframes animat {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.skills-cards {
+  position: relative;
+  padding: 16px;
+}
+.skills-cards:before,
+.skills-cards:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background: linear-gradient(
+    45deg,
+    #6c22bd,
+    #8b25bb,
+    #a52bb9,
+    #bc34b7,
+    #d040b5,
+    #e645a5,
+    #f55195,
+    #ff6188,
+    #ff796e,
+    #ff965b,
+    #f5b255,
+    #e1cd60
+  );
+  width: calc(100% + 4px);
+  height: 430px;
+
+  z-index: -1;
+  animation: animat 3s linear infinite;
+}
+
+.skills-cards:after {
+  filter: blur(50px);
+}
+
+@keyframes animat {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}

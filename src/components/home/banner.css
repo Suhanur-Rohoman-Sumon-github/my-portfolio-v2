@@ -150,3 +150,97 @@
     background-position: 0 0;
   }
 }
+.experience-cards {
+  position: relative;
+  padding: 16px;
+}
+.experience-cards:before,
+.experience-cards:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: linear-gradient(
+    45deg,
+    #6c22bd,
+    #8b25bb,
+    #a52bb9,
+    #bc34b7,
+    #d040b5,
+    #e645a5,
+    #f55195,
+    #ff6188,
+    #ff796e,
+    #ff965b,
+    #f5b255,
+    #e1cd60
+  );
+  width: 450px;
+  height: 280px;
+
+  z-index: -1;
+  animation: animat 3s linear infinite;
+}
+
+.experience-cards:after {
+  filter: blur(70px);
+}
+
+@keyframes animat {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.projects-cards {
+  position: relative;
+  padding: 16px;
+}
+.projects-cards:before,
+.projects-cards:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: linear-gradient(
+    45deg,
+    #6c22bd,
+    #8b25bb,
+    #a52bb9,
+    #bc34b7,
+    #d040b5,
+    #e645a5,
+    #f55195,
+    #ff6188,
+    #ff796e,
+    #ff965b,
+    #f5b255,
+    #e1cd60
+  );
+  width: 590px;
+  height: 290px;
+
+  z-index: -1;
+  animation: animat 3s linear infinite;
+}
+
+.projects-cards:after {
+  filter: blur(70px);
+}
+
+@keyframes animat {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}

@@ -14,8 +14,8 @@ const Banner = () => {
 
   return (
     <div>
-      <Element className="mt-36" name="home">
-        <div className="hero min-h-screen">
+      <Element className="my-48" name="home">
+        <div className="">
           <div className="hero-content md:flex items-center   justify-center  ">
             <div
               className="lg:w-2/3 w-full text-left lg:pr-8"

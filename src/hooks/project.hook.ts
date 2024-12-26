@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import { getAllExperience, getMyBlogs, getMyProjects, getSingleBlogs } from "@/services";
+import { getAllExperience, getMyBlogs, getMyProjects, getSingleBlogs, getSingleProjects } from "@/services";
 import { useQuery } from "@tanstack/react-query";
 
 
@@ -8,7 +8,7 @@ import { useQuery } from "@tanstack/react-query";
 
 
 export const useMyProjectQuery = () => {
-    
+ 
   
   const { data, refetch, isLoading, isError } = useQuery<any, Error>({
        queryKey: ["get-my-projects"],
@@ -61,6 +61,20 @@ export const useGetSingleBLogs = (blogId:string) => {
        queryKey: ["get-single-Blogs",blogId],
     queryFn: async () => {
       const data = await getSingleBlogs(blogId);
+
+      return data;
+    },
+  });
+
+  return { data, refetch, isLoading, isError };
+};
+export const useGetSingProjectsQuery = (projectId:string) => {
+    
+  
+  const { data, refetch, isLoading, isError } = useQuery<any, Error>({
+       queryKey: ["get-single-projects",projectId],
+    queryFn: async () => {
+      const data = await getSingleProjects(projectId);
 
       return data;
     },

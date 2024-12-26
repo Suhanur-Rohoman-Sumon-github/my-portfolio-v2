@@ -141,7 +141,7 @@ const Contact = () => {
                       <textarea
                         aria-label="message"
                         id="message"
-                        rows={8}
+                        rows={6}
                         {...register("message", { required: true })}
                         className="outline-none border rounded-lg border-[#69727D] focus:border-[#D8D9E5] w-full p-2 mt-1 "
                       ></textarea>

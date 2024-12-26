@@ -92,6 +92,14 @@ const Navbar = () => {
             >
               Experience
             </Link>
+            <Link
+              to="blogs"
+              smooth={true}
+              duration={1000}
+              className="cursor-pointer"
+            >
+              Blogs
+            </Link>
           </div>
 
           {/* Contact Button */}

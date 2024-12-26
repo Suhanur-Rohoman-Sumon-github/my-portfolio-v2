@@ -1,5 +1,5 @@
 "use client";
-import { FaAlipay } from "react-icons/fa";
+
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -9,6 +9,7 @@ import { Element } from "react-scroll";
 import Image from "next/image";
 import Title from "../title/Title";
 import { TbLayoutBottombarExpand } from "react-icons/tb";
+import { useGetAllMyExperienceQuery } from "@/hooks/project.hook";
 export const ourservises = [
   {
     img: "https://media.licdn.com/dms/image/v2/D4D0BAQGClmrmXTCOuA/company-logo_200_200/company-logo_200_200/0/1691066927068/reworkai_logo?e=1742428800&v=beta&t=KEVkNFfSeWNqWFZ5xWF6QCXt9sNe-lQpfo8YuDoSFxY",
@@ -36,13 +37,14 @@ export const ourservises = [
   },
 ];
 const Expariance = () => {
+  const { data } = useGetAllMyExperienceQuery();
   return (
     <div className="relative">
       <Element name="experience">
         <div className="py-14 bg-servicesDescriptions bg-cover bg-no-repeat">
           <Title title="Experience" subTitle="My Experience" />
           <VerticalTimeline>
-            {ourservises.map((ourservis, index) => (
+            {data?.map((ourservis, index:number) => (
               <VerticalTimelineElement
                 key={index}
                 className="vertical-timeline-element--work "

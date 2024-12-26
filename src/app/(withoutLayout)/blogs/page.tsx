@@ -1,34 +1,12 @@
+"use client";
+import { useGetMyBlogQuery } from "@/hooks/project.hook";
+import { TBlogs } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
 
 const Blog = () => {
-  const blogs = [
-    {
-      id: "1",
-      title: "How to Learn React Effectively",
-      description:
-        "Master React.js with these essential tips and tricks for building dynamic web applications.",
-      image: "https://via.placeholder.com/300",
-      link: "#",
-    },
-    {
-      id: "1",
-      title: "Exploring Tailwind CSS",
-      description:
-        "Discover how Tailwind CSS can speed up your web development process with utility-first styling.",
-      image: "https://via.placeholder.com/300",
-      link: "#",
-    },
-    {
-      id: "1",
-      title: "Understanding Next.js Routing",
-      description:
-        "A comprehensive guide to navigating pages in Next.js and leveraging its file-based routing.",
-      image: "https://via.placeholder.com/300",
-      link: "#",
-    },
-  ];
+  const { data } = useGetMyBlogQuery();
 
   return (
     <div className="mt-16 min-h-screen">
@@ -51,11 +29,10 @@ const Blog = () => {
         </div>
       </div>
 
-      {/* Blog Cards Section */}
       <div className="max-w-6xl mx-auto px-4 py-8">
         <h2 className="text-3xl font-bold text-gray-800 mb-6">Latest Posts</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {blogs.map((blog, index) => (
+          {data?.map((blog: TBlogs, index: number) => (
             <div
               key={index}
               className="bg-white shadow-md rounded-lg overflow-hidden"
@@ -71,8 +48,13 @@ const Blog = () => {
                 <h3 className="text-xl font-semibold text-gray-800">
                   {blog.title}
                 </h3>
-                <p className="text-gray-600 mt-2">{blog.description}</p>
-                <Link href={`blogs/${blog.id}`}>
+                <p className="text-gray-600 mt-2">
+                  {/* Check if the description length is greater than 50 characters */}
+                  {blog.description.length > 50
+                    ? `${blog.description.slice(0, 45)}...`
+                    : blog.description}
+                </p>
+                <Link href={`blogs/${blog._id}`}>
                   <p className="block text-right text-blue-600 mt-2">
                     Read More
                   </p>

@@ -19,3 +19,12 @@ export type TProjects = {
   gitHubFrontendLink: string;
   category:string
 }
+
+export type TExperience ={
+  _id: string;
+ img: string;
+  title: string;
+  description: string;
+  company: string;
+  duration: string;
+}

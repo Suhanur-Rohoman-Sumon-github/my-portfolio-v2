@@ -52,7 +52,7 @@ const MyBlogs = () => {
             {blogs.map((blog) => (
               <div
                 key={blog.id}
-                className="border rounded-lg shadow-lg overflow-hidden"
+                className="border rounded-lg shadow-lg bg-[#2e032f] blog-cards"
               >
                 <Image
                   src={blog.image}
@@ -78,6 +78,11 @@ const MyBlogs = () => {
             ))}
           </div>
         </div>
+        <Link href={"/blogs"}>
+          <button className="btn-primary mt-4 flex items-center justify-center float-right mr-8">
+            show all blogs <IoIosArrowRoundForward />
+          </button>
+        </Link>
       </section>
     </Element>
   );

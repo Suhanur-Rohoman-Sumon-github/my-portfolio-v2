@@ -141,7 +141,7 @@ const Project = () => {
         <div className=" ">
           <div className="py-16">
             <Tabs>
-              <TabList className="lg:w-10/12 mx-auto grid grid-cols-2 lg:grid-cols-6 place-items-center gap-y-3 mb-24">
+              <TabList className=" mx-auto grid grid-cols-2 lg:grid-cols-6 place-items-center gap-y-3 mb-24">
                 {tabTitles.map((tabTitle) => (
                   <Tab
                     key={tabTitle}
@@ -150,14 +150,14 @@ const Project = () => {
                       active === tabTitle
                         ? "bg-transparent text-[#FFF]"
                         : "bg-transparent text-[#D0ABFF]"
-                    } py-1 lg:py-3 px-3 lg:px-5 border text-xl font-semibold tracking-tight cursor-pointer w-[140px] transition-colors duration-200 text-center`}
+                    } py-1 lg:py-3 px-3 lg:px-5 border text-xl font-semibold tracking-tight cursor-pointer  transition-colors duration-200 text-center`}
                   >
                     {tabTitle}
                   </Tab>
                 ))}
               </TabList>
               {/* Frontend Tab Panel */}
-              <TabPanel className="lg:w-10/12 px-2 mx-auto">
+              <TabPanel className=" px-2 mx-auto">
                 <div className="grid md:grid-cols-2 gap-6  ">
                   {FrontendTabPanel.map((panelContent, index) => (
                     <div

@@ -38,7 +38,6 @@ export const ourservises = [
 const Expariance = () => {
   return (
     <div className="relative">
-      
       <Element name="experience">
         <div className="py-14 bg-servicesDescriptions bg-cover bg-no-repeat">
           <Title title="Experience" subTitle="My Experience" />
@@ -56,7 +55,7 @@ const Expariance = () => {
                 }}
                 icon={<TbLayoutBottombarExpand />}
               >
-                <div className="bg-black">
+                <div className="bg-[#2e032f]">
                   <div className="  p-2 experience-cards">
                     <div className="flex">
                       <Image

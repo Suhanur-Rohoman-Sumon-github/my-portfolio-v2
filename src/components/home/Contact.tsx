@@ -39,12 +39,12 @@ const Contact = () => {
   };
 
   return (
-    <div className="">
+    <div className="overflow-hidden">
       <Title title="Contact" subTitle="Contact now" />
       <Element className=" " name="contact">
         <div className="">
           <div className="  ">
-            <div className="md:flex  gap-8">
+            <div className="lg:flex  gap-8">
               <div data-aos="zoom-in" data-aos-duration="3000" className=" ">
                 <Player
                   autoplay

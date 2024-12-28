@@ -41,6 +41,18 @@
     background-size: 400%;
   }
 
+  @keyframes animat {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
   .cards:after {
     filter: blur(70px);
   }
@@ -110,9 +122,21 @@
     );
     width: calc(100% + 4px);
     height: 430px;
-
+    background-size: 400%;
     z-index: -1;
-    animation: animat 3s linear infinite;
+    animation: animat 10s linear infinite;
+  }
+
+  @keyframes animat {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 
   .skills-cards:after {
@@ -219,8 +243,8 @@
       #f5b255,
       #e1cd60
     );
-    width: 450px;
-    height: 420px;
+    width: 350px;
+    height: 320px;
 
     z-index: -1;
     animation: animat 3s linear infinite;

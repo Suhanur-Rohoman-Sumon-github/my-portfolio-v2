@@ -1,293 +1,232 @@
-.cards {
-  position: relative;
-  padding: 16px;
-  border-radius: 50%;
-}
-
-.cards img {
-  display: block;
-  border-radius: 50%;
-  width: 100%;
-  height: auto;
-}
-
-.cards:before,
-.cards:after {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background: linear-gradient(
-    45deg,
-    #6c22bd,
-    #8b25bb,
-    #a52bb9,
-    #bc34b7,
-    #d040b5,
-    #e645a5,
-    #f55195,
-    #ff6188,
-    #ff796e,
-    #ff965b,
-    #f5b255,
-    #e1cd60
-  );
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  border-radius: 50%;
-  z-index: -1;
-  animation: animat 30s linear infinite;
-  background-size: 400%;
-}
-
-.cards:after {
-  filter: blur(70px);
-}
-
-@keyframes animat {
-  0% {
-    background-position: 0 0;
+@media (min-width: 1440px) {
+  .cards {
+    position: relative;
+    padding: 16px;
+    border-radius: 50%;
   }
-  50% {
-    background-position: 300% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-.video-cards {
-  position: relative;
-  padding: 16px;
-}
-.video-cards:before,
-.video-cards:after {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background: linear-gradient(
-    45deg,
-    #6c22bd,
-    #8b25bb,
-    #a52bb9,
-    #bc34b7,
-    #d040b5,
-    #e645a5,
-    #f55195,
-    #ff6188,
-    #ff796e,
-    #ff965b,
-    #f5b255,
-    #e1cd60
-  );
-  width: calc(100% + 4px);
-  height: 405px;
-  margin-top: 220px;
-  z-index: -1;
-  animation: animat 30s linear infinite;
-}
 
-.video-cards:after {
-  filter: blur(50px);
-}
-
-@keyframes animat {
-  0% {
-    background-position: 0 0;
+  .cards img {
+    display: block;
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
   }
-  50% {
-    background-position: 300% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
 
-.skills-cards {
-  position: relative;
-  padding: 16px;
-}
-.skills-cards:before,
-.skills-cards:after {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background: linear-gradient(
-    45deg,
-    #6c22bd,
-    #8b25bb,
-    #a52bb9,
-    #bc34b7,
-    #d040b5,
-    #e645a5,
-    #f55195,
-    #ff6188,
-    #ff796e,
-    #ff965b,
-    #f5b255,
-    #e1cd60
-  );
-  width: calc(100% + 4px);
-  height: 430px;
-
-  z-index: -1;
-  animation: animat 3s linear infinite;
-}
-
-.skills-cards:after {
-  filter: blur(50px);
-}
-
-@keyframes animat {
-  0% {
-    background-position: 0 0;
+  .cards:before,
+  .cards:after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(
+      45deg,
+      #6c22bd,
+      #8b25bb,
+      #a52bb9,
+      #bc34b7,
+      #d040b5,
+      #e645a5,
+      #f55195,
+      #ff6188,
+      #ff796e,
+      #ff965b,
+      #f5b255,
+      #e1cd60
+    );
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    border-radius: 50%;
+    z-index: -1;
+    animation: animat 30s linear infinite;
+    background-size: 400%;
   }
-  50% {
-    background-position: 300% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-.experience-cards {
-  position: relative;
-  padding: 16px;
-}
-.experience-cards:before,
-.experience-cards:after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background: linear-gradient(
-    45deg,
-    #6c22bd,
-    #8b25bb,
-    #a52bb9,
-    #bc34b7,
-    #d040b5,
-    #e645a5,
-    #f55195,
-    #ff6188,
-    #ff796e,
-    #ff965b,
-    #f5b255,
-    #e1cd60
-  );
-  width: 450px;
-  height: 280px;
 
-  z-index: -1;
-  animation: animat 3s linear infinite;
-}
-
-.experience-cards:after {
-  filter: blur(70px);
-}
-
-@keyframes animat {
-  0% {
-    background-position: 0 0;
+  .cards:after {
+    filter: blur(70px);
   }
-  50% {
-    background-position: 300% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-.projects-cards {
-  position: relative;
-  padding: 16px;
-}
-.projects-cards:before,
-.projects-cards:after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background: linear-gradient(
-    45deg,
-    #6c22bd,
-    #8b25bb,
-    #a52bb9,
-    #bc34b7,
-    #d040b5,
-    #e645a5,
-    #f55195,
-    #ff6188,
-    #ff796e,
-    #ff965b,
-    #f5b255,
-    #e1cd60
-  );
-  width: 590px;
-  height: 290px;
 
-  z-index: -1;
-  animation: animat 3s linear infinite;
-}
-
-.projects-cards:after {
-  filter: blur(70px);
-}
-
-@keyframes animat {
-  0% {
-    background-position: 0 0;
+  .video-cards {
+    position: relative;
+    padding: 16px;
   }
-  50% {
-    background-position: 300% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-.blog-cards {
-  position: relative;
-  padding: 16px;
-}
-.blog-cards:before,
-.blog-cards:after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background: linear-gradient(
-    45deg,
-    #6c22bd,
-    #8b25bb,
-    #a52bb9,
-    #bc34b7,
-    #d040b5,
-    #e645a5,
-    #f55195,
-    #ff6188,
-    #ff796e,
-    #ff965b,
-    #f5b255,
-    #e1cd60
-  );
-  width: 450px;
-  height: 420px;
 
-  z-index: -1;
-  animation: animat 3s linear infinite;
-}
-
-.blog-cards:after {
-  filter: blur(70px);
-}
-
-@keyframes animat {
-  0% {
-    background-position: 0 0;
+  .video-cards:before,
+  .video-cards:after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(
+      45deg,
+      #6c22bd,
+      #8b25bb,
+      #a52bb9,
+      #bc34b7,
+      #d040b5,
+      #e645a5,
+      #f55195,
+      #ff6188,
+      #ff796e,
+      #ff965b,
+      #f5b255,
+      #e1cd60
+    );
+    width: calc(100% + 4px);
+    height: 405px;
+    margin-top: 220px;
+    z-index: -1;
+    animation: animat 30s linear infinite;
   }
-  50% {
-    background-position: 300% 0;
+
+  .video-cards:after {
+    filter: blur(50px);
   }
-  100% {
-    background-position: 0 0;
+
+  .skills-cards {
+    position: relative;
+    padding: 16px;
+  }
+
+  .skills-cards:before,
+  .skills-cards:after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(
+      45deg,
+      #6c22bd,
+      #8b25bb,
+      #a52bb9,
+      #bc34b7,
+      #d040b5,
+      #e645a5,
+      #f55195,
+      #ff6188,
+      #ff796e,
+      #ff965b,
+      #f5b255,
+      #e1cd60
+    );
+    width: calc(100% + 4px);
+    height: 430px;
+
+    z-index: -1;
+    animation: animat 3s linear infinite;
+  }
+
+  .skills-cards:after {
+    filter: blur(50px);
+  }
+
+  .experience-cards {
+    position: relative;
+    padding: 16px;
+  }
+
+  .experience-cards:before,
+  .experience-cards:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(
+      45deg,
+      #6c22bd,
+      #8b25bb,
+      #a52bb9,
+      #bc34b7,
+      #d040b5,
+      #e645a5,
+      #f55195,
+      #ff6188,
+      #ff796e,
+      #ff965b,
+      #f5b255,
+      #e1cd60
+    );
+    width: 450px;
+    height: 280px;
+
+    z-index: -1;
+    animation: animat 3s linear infinite;
+  }
+
+  .experience-cards:after {
+    filter: blur(70px);
+  }
+
+  .projects-cards {
+    position: relative;
+    padding: 16px;
+  }
+
+  .projects-cards:before,
+  .projects-cards:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(
+      45deg,
+      #6c22bd,
+      #8b25bb,
+      #a52bb9,
+      #bc34b7,
+      #d040b5,
+      #e645a5,
+      #f55195,
+      #ff6188,
+      #ff796e,
+      #ff965b,
+      #f5b255,
+      #e1cd60
+    );
+    width: 590px;
+    height: 290px;
+
+    z-index: -1;
+    animation: animat 3s linear infinite;
+  }
+
+  .projects-cards:after {
+    filter: blur(70px);
+  }
+
+  .blog-cards {
+    position: relative;
+    padding: 16px;
+  }
+
+  .blog-cards:before,
+  .blog-cards:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(
+      45deg,
+      #6c22bd,
+      #8b25bb,
+      #a52bb9,
+      #bc34b7,
+      #d040b5,
+      #e645a5,
+      #f55195,
+      #ff6188,
+      #ff796e,
+      #ff965b,
+      #f5b255,
+      #e1cd60
+    );
+    width: 450px;
+    height: 420px;
+
+    z-index: -1;
+    animation: animat 3s linear infinite;
+  }
+
+  .blog-cards:after {
+    filter: blur(70px);
   }
 }

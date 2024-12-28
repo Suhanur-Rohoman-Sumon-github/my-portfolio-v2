@@ -44,14 +44,14 @@ const Contact = () => {
       <Element className=" " name="contact">
         <div className="">
           <div className="  ">
-            <div className="flex  gap-8">
+            <div className="md:flex  gap-8">
               <div data-aos="zoom-in" data-aos-duration="3000" className=" ">
                 <Player
                   autoplay
                   speed={1.5}
                   loop
                   src="https://lottie.host/0dccab9a-8719-480a-9acd-5e2e5252035b/x3nFVy5sG3.json"
-                  style={{ height: "600px", width: "600px" }}
+                  style={{ height: "500px", width: "500px" }}
                 >
                   <Controls
                     buttons={[

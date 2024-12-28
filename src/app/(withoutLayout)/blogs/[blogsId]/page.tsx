@@ -59,7 +59,12 @@ const SingleBlog = () => {
                 </h3>
                 <p className="text-white text-sm mb-4">{blog.date}</p>
 
-                <p className="text-white">{blog.description}</p>
+                <p className="text-[#000] ">
+                  {" "}
+                  {blog.description.length > 50
+                    ? `${blog.description.slice(0, 50)}...`
+                    : blog.description}
+                </p>
                 <Link href={`/blogs/${blog._id}`}>
                   <p className=" mt-4 text-[#f51843] hover:underline flex items-center gap-1">
                     Read more <IoIosArrowRoundForward />

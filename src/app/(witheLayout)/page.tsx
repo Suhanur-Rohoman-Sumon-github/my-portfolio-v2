@@ -1,4 +1,5 @@
 "use client";
+import About from "@/components/home/About";
 import Banner from "@/components/home/Banner";
 import Contact from "@/components/home/Contact";
 import Expariance from "@/components/home/Expariance";
@@ -13,7 +14,7 @@ const page = () => {
   return (
     <div>
       <Banner />
-      {/* <AboutComponent /> */}
+      <About />
       <Skills />
       <Expariance />
       <Project />

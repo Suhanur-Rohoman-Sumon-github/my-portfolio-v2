@@ -50,8 +50,8 @@ const Blog = () => {
                 </h3>
                 <p className="text-gray-600 mt-2">
                   {/* Check if the description length is greater than 50 characters */}
-                  {blog.description.length > 50
-                    ? `${blog.description.slice(0, 45)}...`
+                  {blog.description.length > 20
+                    ? `${blog.description.slice(0, 20)}...`
                     : blog.description}
                 </p>
                 <Link href={`blogs/${blog._id}`}>

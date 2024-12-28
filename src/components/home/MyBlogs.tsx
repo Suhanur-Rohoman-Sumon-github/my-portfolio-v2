@@ -10,7 +10,6 @@ import { TBlogs } from "@/types";
 
 const MyBlogs = () => {
   const { data } = useGetMyBlogQuery();
-  // Example blog data
 
   return (
     <Element name="blogs">
@@ -39,7 +38,12 @@ const MyBlogs = () => {
                   </h3>
                   <p className="text-white text-sm mb-4">{blog.date}</p>
 
-                  <p className="text-white">{blog.description}</p>
+                  <p className="text-[#FFF] mb-4">
+                    {" "}
+                    {blog.description.length > 50
+                      ? `${blog.description.slice(0, 50)}...`
+                      : blog.description}
+                  </p>
                   <Link href={`/blogs/${blog._id}`}>
                     <p className=" mt-4 text-[#f51843] hover:underline flex items-center gap-1">
                       Read more <IoIosArrowRoundForward />

@@ -14,7 +14,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <Element className="my-48" name="home">
+    <Element className="my-32 md:my-48" name="home">
       <div className="hero-content md:flex items-center justify-center">
         {/* Left Section: Text */}
         <div
@@ -22,7 +22,7 @@ const Banner = () => {
           data-aos="fade-up"
           data-aos-duration="3000"
         >
-          <h1 className="text-4xl lg:text-6xl font-bold mt-6 text-[#d0abff]">
+          <h1 className="text-4xl lg:text-5xl font-bold mt-6 text-[#a8a6ac]">
             Hey 👋
           </h1>
           <h1 className="text-4xl lg:text-5xl font-bold mt-6 text-[#d0abff]">

@@ -39,9 +39,7 @@ const Navbar = () => {
           <div>
             <Link to="home" smooth={true} duration={1000}>
               <Image
-                src={
-                  "https://img.freepik.com/premium-vector/gradient-code-logo-tagline-here_23-2148808179.jpg?semt=ais_hybrid"
-                }
+                src="https://img.freepik.com/premium-vector/gradient-code-logo-tagline-here_23-2148808179.jpg?semt=ais_hybrid"
                 className="h-12 w-12 rounded-full border border-white"
                 alt="Logo"
                 height={450}
@@ -51,12 +49,12 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-6">
+          <div className="hidden lg:flex space-x-8 items-center">
             <Link
               to="home"
               smooth={true}
               duration={1000}
-              className="cursor-pointer"
+              className="cursor-pointer hover:text-[#ffffff] transition duration-200"
             >
               Home
             </Link>
@@ -64,7 +62,7 @@ const Navbar = () => {
               to="about"
               smooth={true}
               duration={1000}
-              className="cursor-pointer"
+              className="cursor-pointer hover:text-[#ffffff] transition duration-200"
             >
               About
             </Link>
@@ -72,7 +70,7 @@ const Navbar = () => {
               to="projects"
               smooth={true}
               duration={1000}
-              className="cursor-pointer"
+              className="cursor-pointer hover:text-[#ffffff] transition duration-200"
             >
               Projects
             </Link>
@@ -80,7 +78,7 @@ const Navbar = () => {
               to="skills"
               smooth={true}
               duration={1000}
-              className="cursor-pointer"
+              className="cursor-pointer hover:text-[#ffffff] transition duration-200"
             >
               Skills
             </Link>
@@ -88,7 +86,7 @@ const Navbar = () => {
               to="experience"
               smooth={true}
               duration={1000}
-              className="cursor-pointer"
+              className="cursor-pointer hover:text-[#ffffff] transition duration-200"
             >
               Experience
             </Link>
@@ -96,26 +94,22 @@ const Navbar = () => {
               to="blogs"
               smooth={true}
               duration={1000}
-              className="cursor-pointer"
+              className="cursor-pointer hover:text-[#ffffff] transition duration-200"
             >
               Blogs
             </Link>
-          </div>
-
-          {/* Contact Button */}
-          <div className="hidden md:flex">
             <Link
               to="contact"
               smooth={true}
               duration={1000}
-              className="btn btn-primary"
+              className="cursor-pointer hover:text-[#ffffff] btn btn-primary"
             >
               Contact
             </Link>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center">
+          <div className="lg:hidden flex items-center">
             <button
               type="button"
               onClick={toggleMenu}
@@ -147,13 +141,13 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-md">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className="lg:hidden bg-white shadow-md">
+          <div className="px-4 pt-4 pb-6 space-y-4 sm:px-6">
             <Link
               to="home"
               smooth={true}
               duration={500}
-              className="block px-3 py-2 rounded-md text-base font-medium"
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100"
               onClick={toggleMenu}
             >
               Home
@@ -162,7 +156,7 @@ const Navbar = () => {
               to="about"
               smooth={true}
               duration={500}
-              className="block px-3 py-2 rounded-md text-base font-medium"
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100"
               onClick={toggleMenu}
             >
               About
@@ -171,7 +165,7 @@ const Navbar = () => {
               to="projects"
               smooth={true}
               duration={500}
-              className="block px-3 py-2 rounded-md text-base font-medium"
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100"
               onClick={toggleMenu}
             >
               Projects
@@ -180,7 +174,7 @@ const Navbar = () => {
               to="skills"
               smooth={true}
               duration={500}
-              className="block px-3 py-2 rounded-md text-base font-medium"
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100"
               onClick={toggleMenu}
             >
               Skills
@@ -189,16 +183,25 @@ const Navbar = () => {
               to="experience"
               smooth={true}
               duration={500}
-              className="block px-3 py-2 rounded-md text-base font-medium"
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100"
               onClick={toggleMenu}
             >
               Experience
             </Link>
             <Link
+              to="blogs"
+              smooth={true}
+              duration={500}
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100"
+              onClick={toggleMenu}
+            >
+              Blogs
+            </Link>
+            <Link
               to="contact"
               smooth={true}
-              duration={1000}
-              className="btn btn-primary"
+              duration={500}
+              className="btn btn-primary w-full"
               onClick={toggleMenu}
             >
               Contact
